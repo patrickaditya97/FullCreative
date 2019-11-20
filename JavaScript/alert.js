@@ -10,9 +10,9 @@ for(i=0; i<el.length;i++)
 {
     el[i].addEventListener('click', function()
     {
+        console.log(i);
         console.log("click");
         news++;
         console.log(news);
-        console.log(i);
     })
 }
