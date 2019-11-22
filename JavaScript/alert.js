@@ -4,15 +4,24 @@
 //      console.log("click");
 // })
 
-const el  = document.getElementsByTagName('button');
-var news = 0;
-for(i=0; i<el.length;i++)
+(function()
 {
-    el[i].addEventListener('click', function()
-    {
-        console.log(i);
-        console.log("click");
-        news++;
-        console.log(news);
-    })
-}
+
+    const el  = document.getElementsByTagName('button');
+    var news = 0;
+    console.log(this);
+    console.log(this.alert(10));
+    var name = prompt("hello");
+    console.log(name);
+    // for(i=0; i<el.length;i++)
+    // {
+        window.addEventListener('click', function()
+        {
+            console.log("id:", this);
+            console.log("click");
+            news++;
+            console.log(news);
+        })
+    // }
+
+})()
