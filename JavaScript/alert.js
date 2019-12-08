@@ -10,18 +10,18 @@
     const el  = document.getElementsByTagName('button');
     var news = 0;
     console.log(this);
-    console.log(this.alert(10));
-    var name = prompt("hello");
+    // console.log(this.alert(10));
+    console.log(el)
+    // var name = prompt("hello");
     console.log(name);
-    // for(i=0; i<el.length;i++)
-    // {
-        window.addEventListener('click', function()
+    for(var i=0; i<el.length;i++)
+    {
+        el[i].addEventListener('click', function()
         {
             console.log("id:", this);
             console.log("click");
-            news++;
-            console.log(news);
+            console.log(i);
         })
-    // }
+    }
 
 })()
