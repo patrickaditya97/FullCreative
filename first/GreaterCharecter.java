@@ -6,26 +6,11 @@ import java.util.Scanner;
 public class GreaterCharecter
 {
 
-    public static void main(String[] args) {
-
-        Scanner in = new Scanner(System.in);
-
-        String string1 = in.next();
-        String string2 = in.next();
-        int strLen = string2.length();
-        int index = 0;
-
-        while(string1.length() >= string2.length())
-        {
-
-
-
-        }
-
-//        for(int i = 0; i<string1.length();i++)
-//        {
-//
-//        }
+    public static void main(String[] args)
+    {
+        String str = new String("Pat");
+        String str1 = new String("apt");
+        System.out.println(str.toLower().sort());
 
     }
 
